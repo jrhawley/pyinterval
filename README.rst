@@ -24,6 +24,31 @@ closed interval system on the extended real number set. Interval
 objects, as defined in this library, consist of a finite union of closed,
 possibly unbound intervals in the mathematical sense.
 
+Installation
+------------
+
+At the command line::
+
+    # from PyPI
+    $ pip install pyinterval
+    # from source
+    $ python setup.py install
+    # from Anaconda Cloud
+    $ conda install -c jrhawley pyinterval
+
+
+Building
+--------
+
+Using setuptools ::
+
+    $ python setup.py sdist
+
+To build the Anaconda package, use `conda build` ::
+
+    $ conda build --python {py_ver} meta.yaml
+
+
 Links
 -----
 
