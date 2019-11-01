@@ -1,0 +1,35 @@
+{% set name = "pyinterval" %}
+{% set version = "1.2.1.dev0" %}
+
+package:
+  name: "{{ name|lower }}"
+  version: "{{ version }}"
+
+source:
+  git_url: https://github.com/taschini/pyinterval.git
+
+build:
+  number: 0
+  script: "$PYTHON -m pip install . --no-deps --ignore-installed -vv "
+
+requirements:
+  host:
+    - python>=3
+    - pip
+    - crlibm>=1.0.3
+    - six>=1.10
+  run:
+    - python
+
+test:
+  imports:
+    - interval
+
+about:
+  home: https://github.com/taschini/pyinterval
+  license_file: LICENSE
+  summary: Interval arithmetic in Python
+
+extra:
+  recipe-maintainers:
+    - jrhawley
