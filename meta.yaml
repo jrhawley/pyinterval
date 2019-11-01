@@ -16,10 +16,12 @@ requirements:
   host:
     - python {{PY_VER}}*,>=3
     - pip
-    - crlibm>=1.0.3
+    - pycrlibm>=1.0.3
     - six>=1.10
   run:
     - python
+    - pycrlibm
+    - six
 
 test:
   imports:
