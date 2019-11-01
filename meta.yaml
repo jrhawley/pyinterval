@@ -14,7 +14,7 @@ build:
 
 requirements:
   host:
-    - python {{PY_VER}}*,>=3
+    - python {{PY_VER}},>=3
     - pip
     - pycrlibm>=1.0.3
     - six>=1.10
