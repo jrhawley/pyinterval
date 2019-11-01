@@ -14,7 +14,7 @@ build:
 
 requirements:
   host:
-    - python>=3
+    - python {{PY_VER}}*,>=3
     - pip
     - crlibm>=1.0.3
     - six>=1.10
@@ -29,6 +29,7 @@ about:
   home: https://github.com/taschini/pyinterval
   license_file: LICENSE
   summary: Interval arithmetic in Python
+  doc_url: https://pyinterval.readthedocs.io
 
 extra:
   recipe-maintainers:
